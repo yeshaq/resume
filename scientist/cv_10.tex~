@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\usepackage{pifont} 
+\begin{document}
+
+\header{yossof}{eshaq}{data scientist} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+\footnotesize{3819 Country Club Dr. \#301
+Los Angeles, CA 90019
+United States}
+~
++1 (503) 502 5276
+~
+\href{mailto:yossofeshaq@gmail.com}{yossofeshaq@gmail.com}
+%\href{http://www.yossof.com}{http://www.yossof.com}
+%\href{http://facebook.com/johnsmith}{fb://jsmith}
+\section{languages}
+english mother tongue
+farsi \& french fluency
+\section{programming}
+{\color{red} $\varheartsuit$} Python
+C++, ROOT, R, LaTeX
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2008--2014}
+{Ph.D, M.A. {\normalfont of Physics}}
+{University of Rochester}
+{\emph{Search for New Physics in All-hadronic Events with AlphaT in 8 TeV Data with CMS} \\ This thesis describes a search I conducted for supersymmety in physics collision at the Large Hadron Collider by employing various data analysis techniques}
+%------------------------------------------------
+~~\\
+\entry
+{2003--2007}
+{Bachelor {\normalfont of Physics}}
+{The University of California, San Diego}
+{Specialization in Astrophysics}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2009--2014}
+{CERN}
+{Geneva, Switzerland}
+%{\emph{1\textsuperscript{st} Year Analyst} \\
+{\emph{Graduate Research in Particle Physics} \\
+%~\\
+In the 4+ years at CERN, I conducted experimental searches for new physics, 
+performed measurements for the collaboration, and participated in the operation 
+of the Compact Muon Solenoid detector.
+%~\\
+\begin{itemize}
+\item Search for Supersymmetry
+\begin{itemize}
+\item used complex data analysis to isolate extremely rare signal in Terabytes of data
+%\item analyzed erabytes of data
+  \begin{itemize}
+  \item developed linear models and multivariate analyses
+  \item constructed likelihood models
+  \item hypothesis testing: CLs, Profile-Likelihood
+  \end{itemize}      
+\item integral part of fast-paced analysis group
+\item contributed to the discovery of the Higgs Boson \color{red}{\ding{44}}
+\end{itemize}
+\item Detector Operation
+\begin{itemize}
+\item frequently coordinated a group of $\sim$15 physicist and engineers
+\item represented sub-detector group in daily meetings
+\item organized, chaired and presented in weekly meetings
+\end{itemize}
+\end{itemize}}
+%------------------------------------------------
+~~\\
+\entry
+{2008}
+{Alameda Applied Sciences Corp}
+{Alameda, California}
+{\emph{Summer Research} \\
+Applied research in plasma pulse-power technology
+\begin{itemize}
+\item worked with project leader to optimize neutron output
+\item was offered full-time extension
+\end{itemize}}
+%------------------------------------------------
+\end{entrylist}
+~\\
+\begin{entrylist}
+~\\
+\entry
+{2007--2008} 
+{Kaplan Co.}
+{San Diego, California}
+{\emph{Teacher} 
+\begin{itemize} 
+\item Responsible to teach various Kaplan SAT methods to 20+ students
+\item Passed intensive training including a required 90th+ percentile score on diagnostic test to become
+teacher
+\item Received outstanding evaluations from students and teacher
+\end{itemize}
+}
+
+~\\
+\end{entrylist}
+\begin{entrylist}
+\entry
+{2006--2008}
+{UCSD Mechanical and Aerospace Engineering Dept.}
+{San Diego, California}
+{\emph{Research Assistant} \\ 
+\begin{itemize}
+\item Integral part of small group dedicated to the research of plasma dynamics.
+%\item Gained extensive experience with high power lasers, high voltage, optics, and high vacuum systems.
+\item Responsible for running experiments, analyzing data, presenting results, and helping publish.
+%\item Ability to work in various pulse power experiments ranging from 80kA to 1MA machines
+\item Selected to help conduct a three week experiment in Imperial College, London, UK
+\end{itemize}}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{activities and Awards}
+\begin{itemize}
+\item Ranked 2\textsuperscript{nd} in graduate teacher assistant evaluations   
+\item ``Research scholar award for outstanding academic achievement in the presentation of a scholarly
+paper at the 20th annual UCSD Undergraduate Research Conference''
+\item ``Outstanding Poster Award at 8th annual Engineer Undergrad Research Konference Assembly''
+\end{itemize}
+
+%\begin{entrylist}
+%%------------------------------------------------
+%\entry
+%{2011}
+%{Postgraduate Scholarship}
+%{School of Business, The University of California}
+%{Awarded to the top student in their final year of a Bachelors degree.}
+%%------------------------------------------------
+%\end{entrylist}
+%
+%
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\section{skills}
+complex data analysis, data modeling, regular expression, scripting, linux
+
+\section{interests}
+
+\textbf{professional:} physics problems, data analysis \textbf{personal:} treasure hunting, chess, running, dancing
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+\nocite{*}
+\printbibsection{misc}{thesis}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%
+
+%
+%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+%
+%----------------------------------------------------------------------------------------
+
+\end{document}
